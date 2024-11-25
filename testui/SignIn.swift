@@ -38,29 +38,32 @@ struct SignIn: View {
                         VStack {
                            TextFieldWithUnderlineStyle(title: "Email or username", placeholder: "Enter your email or username", textBinding: $emailOrUsername, required: false)
                             
-                            ZStack {
-                                TextFieldWithUnderlineStyle(title: "Password", placeholder: "Enter your password", textBinding: $password)
-                                    .opacity(showPassword ? 1 : 0)
+                            VStack {
+                                Text("Password")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.black)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
                                 
-                                VStack {
-                                    Text("Password")
-                                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                                        .foregroundColor(.black)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                ZStack {
+                                    TextField("Enter your password", text: $password)
+                                        .opacity(showPassword ? 1 : 0)
                                     
                                     SecureField("Enter your password", text: $password)
                                         .opacity(showPassword ? 0 : 1)
-                                    Divider()
-                                }.padding(.top, 20)
-                            }
-                            .overlay(alignment: .trailing) {
-                                Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
-                                    .padding(16)
-                                    .foregroundStyle(showPassword ? .primary : .secondary)
-                                    .onTapGesture {
-                                        showPassword.toggle()
-                                    }
-                            }
+                                }
+                                .overlay(alignment: .trailing) {
+                                    Image(systemName: showPassword ? "eye.fill" : "eye.slash.fill")
+                                        .padding(16)
+                                        .foregroundStyle(showPassword ? .primary : .secondary)
+                                        .onTapGesture {
+                                            showPassword.toggle()
+                                        }
+                                }
+                            
+                                Divider()
+                                
+                            }.padding(.top, 20)
+                           
                             
                             Button(action: {}) {
                                 Text("Sign in")

@@ -32,6 +32,7 @@ struct TextFieldWithUnderlineStyle: View {
 
             TextField(placeholder, text: textBinding)
                 .textInputAutocapitalization(.never)
+                .autocorrectionDisabled()
             
             Divider()
         }

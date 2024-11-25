@@ -12,8 +12,9 @@ struct Home: View {
     
     var body: some View {
         ZStack {
-            ScrollView {
-                VStack {
+            VStack {
+                ZStack {
+                    Color.accentColor
                     HStack {
                         Text("Welcome, Andrea")
                         Spacer()
@@ -23,14 +24,44 @@ struct Home: View {
                         }
                     }
                     .padding(20)
+                    .padding(.top, 80)
+                }
+                .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                Spacer()
+            }.ignoresSafeArea()
+                .zIndex(2)
+
+            ScrollView {
+                VStack (spacing: 20) {
+                    HStack {
+                        Image(systemName:"chevron.backward")
+                            .font(.title2)
+                        Text("November")
+                            .font(.title)
+                            .padding(.horizontal, 20)
+                        Image(systemName:"chevron.right")
+                            .font(.title2)
+                    }
+                    .padding([.top, .horizontal], 20)
+                    
+                    Spacer()
+                        .frame(height: 300)
                     
                     
+                    ListItem()
+                    ListItem()
+                    ListItem()
+                    ListItem()
+                    ListItem()
+                    ListItem()
+                    ListItem()
                 }
             }
+            .padding(.top, 70)
+            .zIndex(1)
             VStack {
                 Spacer()
 
-                
                 Button (action: {
                     showAddNew.toggle()
                 }){
@@ -41,10 +72,12 @@ struct Home: View {
                         .foregroundColor(.accent)
                         .fontWeight(.light)
                 }.sheet(isPresented: $showAddNew) {
-                    Text("Hello :)")
+                    AddTransaction()
+                        .presentationDetents([.fraction(0.8)])
                         .presentationDragIndicator(.visible)
                 }
             }
+            .zIndex(3)
 
         }
     }

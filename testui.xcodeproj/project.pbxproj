@@ -17,6 +17,11 @@
 		E920B9F82CEF4D0400A39D3A /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920B9F72CEF4D0400A39D3A /* ForgotPassword.swift */; };
 		E920B9FC2CEF821100A39D3A /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920B9FB2CEF821100A39D3A /* Home.swift */; };
 		E920B9FE2CEF880900A39D3A /* AddTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E920B9FD2CEF880900A39D3A /* AddTransaction.swift */; };
+		E9C2298A2CF428A90021439E /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C229892CF428A90021439E /* Helper.swift */; };
+		E9C2298C2CF42EFC0021439E /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C2298B2CF42EFC0021439E /* NumberButton.swift */; };
+		E9C2298E2CF437930021439E /* NumberPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C2298D2CF437930021439E /* NumberPad.swift */; };
+		E9C229902CF450F70021439E /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C2298F2CF450F70021439E /* ListItem.swift */; };
+		E9C229922CF45DE50021439E /* MoneyChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C229912CF45DE50021439E /* MoneyChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,11 @@
 		E920B9F72CEF4D0400A39D3A /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		E920B9FB2CEF821100A39D3A /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E920B9FD2CEF880900A39D3A /* AddTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransaction.swift; sourceTree = "<group>"; };
+		E9C229892CF428A90021439E /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E9C2298B2CF42EFC0021439E /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		E9C2298D2CF437930021439E /* NumberPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPad.swift; sourceTree = "<group>"; };
+		E9C2298F2CF450F70021439E /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		E9C229912CF45DE50021439E /* MoneyChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +78,14 @@
 				E920B9F12CEDCAB500A39D3A /* SignIn.swift */,
 				E920B9F72CEF4D0400A39D3A /* ForgotPassword.swift */,
 				E920B9F52CEF4C3D00A39D3A /* SignUp.swift */,
+				E9C229892CF428A90021439E /* Helper.swift */,
 				E920B9F32CEDCB5800A39D3A /* TextField.swift */,
+				E9C2298B2CF42EFC0021439E /* NumberButton.swift */,
 				E920B9FB2CEF821100A39D3A /* Home.swift */,
+				E9C229912CF45DE50021439E /* MoneyChart.swift */,
 				E920B9FD2CEF880900A39D3A /* AddTransaction.swift */,
+				E9C2298F2CF450F70021439E /* ListItem.swift */,
+				E9C2298D2CF437930021439E /* NumberPad.swift */,
 				E920B9E72CEDBB6700A39D3A /* Assets.xcassets */,
 				E920B9E92CEDBB6700A39D3A /* Preview Content */,
 			);
@@ -155,13 +170,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C229902CF450F70021439E /* ListItem.swift in Sources */,
 				E920B9E62CEDBB6500A39D3A /* ContentView.swift in Sources */,
 				E920B9F22CEDCAB500A39D3A /* SignIn.swift in Sources */,
 				E920B9E42CEDBB6500A39D3A /* testuiApp.swift in Sources */,
+				E9C229922CF45DE50021439E /* MoneyChart.swift in Sources */,
 				E920B9F42CEDCB5800A39D3A /* TextField.swift in Sources */,
 				E920B9F62CEF4C3D00A39D3A /* SignUp.swift in Sources */,
+				E9C2298A2CF428A90021439E /* Helper.swift in Sources */,
 				E920B9F82CEF4D0400A39D3A /* ForgotPassword.swift in Sources */,
+				E9C2298E2CF437930021439E /* NumberPad.swift in Sources */,
 				E920B9FE2CEF880900A39D3A /* AddTransaction.swift in Sources */,
+				E9C2298C2CF42EFC0021439E /* NumberButton.swift in Sources */,
 				E920B9FC2CEF821100A39D3A /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
